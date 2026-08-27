@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://tillyhouse.vercel.app/</loc></url>
-<url><loc>https://tillyhouse.vercel.app/about</loc></url>
-<url><loc>https://tillyhouse.vercel.app/stay</loc></url>
-<url><loc>https://tillyhouse.vercel.app/stay/aoarashi</loc></url>
-<url><loc>https://tillyhouse.vercel.app/stay/chitose</loc></url>
-<url><loc>https://tillyhouse.vercel.app/menu</loc></url>
-<url><loc>https://tillyhouse.vercel.app/booking</loc></url>
-<url><loc>https://tillyhouse.vercel.app/visit</loc></url>
+<url><loc>https://tillyhouse.vercel.app/</loc><priority>1.0</priority></url>
+<url><loc>https://tillyhouse.vercel.app/about</loc><priority>0.8</priority></url>
+<url><loc>https://tillyhouse.vercel.app/stay</loc><priority>0.9</priority></url>
+<url><loc>https://tillyhouse.vercel.app/stay/aoarashi</loc><priority>0.9</priority></url>
+<url><loc>https://tillyhouse.vercel.app/stay/chitose</loc><priority>0.9</priority></url>
+<url><loc>https://tillyhouse.vercel.app/menu</loc><priority>0.9</priority></url>
+<url><loc>https://tillyhouse.vercel.app/booking</loc><priority>0.9</priority></url>
+<url><loc>https://tillyhouse.vercel.app/blog</loc><priority>0.7</priority></url>
+<url><loc>https://tillyhouse.vercel.app/visit</loc><priority>0.8</priority></url>
 </urlset>
