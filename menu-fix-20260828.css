@@ -1,46 +1,66 @@
 /* Tilly House menu refinement — 2026-08-28 */
-/* Header logo: +30% from the previous 48px desktop size */
-.brand img{height:62px!important;max-width:268px!important;width:auto!important;object-fit:contain}
+/* Header logo: +30% from the previous 62px desktop size */
+.nav{height:96px}
+.brand img{height:80px!important;max-width:348px!important;width:auto!important;object-fit:contain}
 
-/* Menu typography: 15px throughout menu UI, including text buttons */
-.menu-cats button,
-.menu-item,
-.menu-item h3,
-.menu-item .en,
-.menu-item-foot,
-.menu-item-foot b,
-.menu-note,
-.menu-note p,
-.option,
-.option-title,
-.modal,
-.modal .btn{
+/* Menu typography: 15px throughout the interactive menu, including buttons */
+.menu-page .menu-wrap,
+.menu-page .menu-wrap button,
+.menu-page .menu-wrap .eyebrow,
+.menu-page .menu-item,
+.menu-page .menu-item h3,
+.menu-page .menu-item .en,
+.menu-page .menu-item-foot,
+.menu-page .menu-item-foot b,
+.menu-page .menu-note,
+.menu-page .menu-note p,
+.menu-page .option,
+.menu-page .option-title,
+.menu-page .modal,
+.menu-page .modal .btn,
+.menu-page .round-add{
   font-size:15px!important;
 }
-.menu-item-foot b{font-family:var(--sans)!important;font-weight:700!important;line-height:1.2!important}
-.menu-cats button{line-height:1.25!important;min-height:44px}
-.option{line-height:1.2!important;min-height:42px;padding:10px 14px!important}
-.modal .btn{line-height:1!important}
+.menu-page .menu-item-foot b{font-family:var(--sans)!important;font-weight:700!important;line-height:1.25!important}
+.menu-page .menu-cats button{line-height:1.25!important;min-height:46px}
+.menu-page .option{line-height:1.2!important;min-height:44px;padding:10px 14px!important}
+.menu-page .modal .btn{line-height:1!important}
 
-/* Desktop menu: exactly 3 products per row */
-.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;border:0!important}
-.menu-item{min-width:0;min-height:215px}
+/* Desktop menu: 3 product cards per row */
+.menu-page .menu-wrap{grid-template-columns:190px minmax(0,1fr);gap:30px}
+.menu-page .menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;border:0!important}
+.menu-page .menu-item{min-width:0;min-height:100%;border:1px solid var(--line-soft);border-radius:16px;overflow:hidden;background:rgba(255,253,248,.72)}
+.menu-page .menu-item-body{padding:18px;display:flex;flex-direction:column;flex:1;min-width:0}
+.menu-page .menu-item-foot{margin-top:auto;padding-top:18px;align-items:center}
 
-/* Product photography: preserve the supplied 1:1 artwork cleanly */
-.menu-item.has-image{display:flex!important;flex-direction:column!important;grid-template-columns:none!important;padding:0!important;min-height:0!important;background:var(--milk)!important}
-.menu-thumb{display:block!important;width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center!important;background:#fff}
-.menu-item.has-image .menu-item-body{flex:1;padding:18px!important}
-.coffee-feature img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;background:#fff}
+/* Every product gets a consistent square visual area; real supplied photos remain untouched */
+.menu-page .menu-visual{width:100%;aspect-ratio:1/1;background:linear-gradient(145deg,#f7f2e8,#ece3d6);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.menu-page .menu-visual::after{content:'TILLY HOUSE';font:700 12px/1 var(--sans);letter-spacing:.16em;color:rgba(58,74,32,.28)}
+.menu-page .menu-thumb{position:absolute;inset:0;display:block!important;width:100%!important;height:100%!important;min-height:0!important;object-fit:cover!important;object-position:center!important;background:#fff}
+.menu-page .menu-item.has-image{display:flex!important;flex-direction:column!important;padding:0!important;min-height:0!important;background:var(--milk)!important}
+.menu-page .menu-item:not(.has-image){display:flex!important;flex-direction:column!important;padding:0!important}
 
-@media(max-width:1050px){
-  .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
-}
+/* Footer slogan: exactly two compact lines */
+.footer-tagline{font-size:44px!important;line-height:.96!important;letter-spacing:-.025em!important;max-width:none!important;white-space:nowrap}
+
 @media(max-width:900px){
-  .brand img{height:57px!important;max-width:245px!important}
+  .nav{height:90px}
+  .brand img{height:72px!important;max-width:312px!important}
+  .mobile-panel.open{top:90px!important}
+  .menu-page .menu-wrap{grid-template-columns:1fr}
+  .menu-page .menu-cats{top:90px}
+}
+@media(max-width:760px){
+  .menu-page .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .footer-tagline{font-size:36px!important}
 }
 @media(max-width:600px){
-  .menu-grid{grid-template-columns:1fr!important}
-  .menu-item.has-image{display:flex!important;flex-direction:column!important}
-  .menu-thumb{width:100%!important;aspect-ratio:1/1!important}
-  .brand img{height:54px!important;max-width:230px!important}
+  .nav{height:86px}
+  .brand img{height:70px!important;max-width:300px!important}
+  .mobile-panel.open{top:86px!important}
+  .menu-page .menu-cats{top:86px}
+  .footer-tagline{font-size:30px!important}
+}
+@media(max-width:520px){
+  .menu-page .menu-grid{grid-template-columns:1fr!important}
 }
