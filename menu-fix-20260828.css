@@ -1,0 +1,46 @@
+/* Tilly House menu refinement — 2026-08-28 */
+/* Header logo: +30% from the previous 48px desktop size */
+.brand img{height:62px!important;max-width:268px!important;width:auto!important;object-fit:contain}
+
+/* Menu typography: 15px throughout menu UI, including text buttons */
+.menu-cats button,
+.menu-item,
+.menu-item h3,
+.menu-item .en,
+.menu-item-foot,
+.menu-item-foot b,
+.menu-note,
+.menu-note p,
+.option,
+.option-title,
+.modal,
+.modal .btn{
+  font-size:15px!important;
+}
+.menu-item-foot b{font-family:var(--sans)!important;font-weight:700!important;line-height:1.2!important}
+.menu-cats button{line-height:1.25!important;min-height:44px}
+.option{line-height:1.2!important;min-height:42px;padding:10px 14px!important}
+.modal .btn{line-height:1!important}
+
+/* Desktop menu: exactly 3 products per row */
+.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;border:0!important}
+.menu-item{min-width:0;min-height:215px}
+
+/* Product photography: preserve the supplied 1:1 artwork cleanly */
+.menu-item.has-image{display:flex!important;flex-direction:column!important;grid-template-columns:none!important;padding:0!important;min-height:0!important;background:var(--milk)!important}
+.menu-thumb{display:block!important;width:100%!important;height:auto!important;min-height:0!important;aspect-ratio:1/1!important;object-fit:cover!important;object-position:center!important;background:#fff}
+.menu-item.has-image .menu-item-body{flex:1;padding:18px!important}
+.coffee-feature img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;background:#fff}
+
+@media(max-width:1050px){
+  .menu-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+}
+@media(max-width:900px){
+  .brand img{height:57px!important;max-width:245px!important}
+}
+@media(max-width:600px){
+  .menu-grid{grid-template-columns:1fr!important}
+  .menu-item.has-image{display:flex!important;flex-direction:column!important}
+  .menu-thumb{width:100%!important;aspect-ratio:1/1!important}
+  .brand img{height:54px!important;max-width:230px!important}
+}
