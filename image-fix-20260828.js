@@ -1,5 +1,5 @@
 (()=>{
-  const version='20260828b';
+  const version='20260828c';
   const refresh=(root=document)=>{
     root.querySelectorAll?.('img[src*="/assets/coffee-americano.webp"],img[src*="/assets/coffee-bacxiu.webp"]').forEach(img=>{
       try{
