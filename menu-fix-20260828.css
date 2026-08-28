@@ -3,6 +3,19 @@
 .nav{height:96px}
 .brand img{height:80px!important;max-width:348px!important;width:auto!important;object-fit:contain}
 
+/* Global 11px text normalization: every text element previously rendered at 11px is now 15px */
+.btn,
+.nav-links a,
+.menu-item .en,
+.footer-links,
+.booking-trust,
+.payment-badges,
+.payment-note,
+[style*="font-size:11px"],
+[style*="font-size: 11px"]{
+  font-size:15px!important;
+}
+
 /* Menu typography: 15px throughout the interactive menu, including buttons */
 .menu-page .menu-wrap,
 .menu-page .menu-wrap button,
