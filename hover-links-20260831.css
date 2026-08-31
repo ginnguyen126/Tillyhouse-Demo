@@ -1,0 +1,18 @@
+/* Global hover/focus interactions — Tilly House */
+a,button,.btn,.menu-cats button,.round-add,.social-icon,.footer-mood-link,.footer-links a{transition:transform .2s ease,color .2s ease,background-color .2s ease,border-color .2s ease,opacity .2s ease,box-shadow .2s ease;text-underline-offset:4px}
+@media (hover:hover) and (pointer:fine){
+  a:not(.brand):not(.social-icon):hover{color:#6b7f42}
+  .nav-links a:hover,.mobile-panel a:hover,.footer-links a:hover{text-decoration:underline;text-decoration-thickness:1px}
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(38,50,22,.12)}
+  .btn.ghost:hover{background:#fffdf8;border-color:#6b7f42}
+  .menu-cats button:hover{transform:translateY(-1px);border-color:#6b7f42;color:#3A4A20;background:#f2f5e8}
+  .round-add:hover,.icon-btn:hover,.qty button:hover{transform:translateY(-2px) scale(1.03)}
+  .menu-item:hover{transform:translateY(-3px);box-shadow:0 12px 30px rgba(38,50,22,.08);border-color:#b9bea9}
+  .menu-thumb{transition:transform .35s ease}
+  .menu-item:hover .menu-thumb{transform:scale(1.025)}
+  .brand:hover img{transform:scale(1.025)}
+  .brand img{transition:transform .2s ease}
+  .social-icon:hover{transform:translateY(-2px);background:#fff}
+}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #6b7f42;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important;transform:none!important}}
