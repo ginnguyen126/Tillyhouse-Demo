@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=>{
   if(!document.querySelector('link[rel="icon"]')){const i=document.createElement('link');i.rel='icon';i.type='image/svg+xml';i.href='/favicon.svg';document.head.appendChild(i)}
   if(!document.querySelector('link[href="/theme.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/theme.css';document.head.appendChild(c)}
+  if(!document.querySelector('link[href="/hover-links-20260831.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/hover-links-20260831.css';document.head.appendChild(c)}
   if(!document.querySelector('link[href="/footer-square.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/footer-square.css';document.head.appendChild(c)}
   if(!document.querySelector('link[href="/menu-fix-20260828.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/menu-fix-20260828.css';document.head.appendChild(c)}
   if(!document.querySelector('script[src="/image-fix-20260828.js"]')){const s=document.createElement('script');s.src='/image-fix-20260828.js';document.head.appendChild(s)}
