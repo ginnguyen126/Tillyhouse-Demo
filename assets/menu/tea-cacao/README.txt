@@ -1,0 +1,1 @@
+Menu assets generated from user-supplied product photography.
