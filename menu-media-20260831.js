@@ -17,7 +17,7 @@
     'CHOCOLATE NÓNG/LẠNH':'/assets/menu/tea-cacao/cacao.webp'
   };
   const imageFor=name=>officialImages[name]||(typeof productImages!=='undefined'?productImages[name]:null);
-  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260901-menu-images':src;
+  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260901-cacao-banana-v2':src;
   const originalShowProduct=window.showProduct;
   if(typeof originalShowProduct==='function'){
     window.showProduct=(i)=>{
