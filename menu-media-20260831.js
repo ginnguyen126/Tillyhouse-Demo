@@ -8,16 +8,16 @@
     'CÀ PHÊ SỮA':'/assets/menu/coffee/vietnamese-milk-coffee.webp',
     'CÀ PHÊ THANH YÊN':'/assets/menu/coffee/yuzu-espresso.webp',
     'CÀ PHÊ ĐEN':'/assets/menu/coffee/vietnamese-black-coffee.webp',
-    'HOUJICHA CHUỐI':'/assets/menu/houjicha/banana.webp',
+    'HOUJICHA CHUỐI':'/api/menu-image-v3?key=banana',
     'HOUJICHA SỮA':'/api/menu-image?key=cold-whisked',
     'HOUJICHA TRÀ BÁ TƯỚC':'/api/menu-image?key=earl-grey',
     'HOUJICHA PUDDING CHUỐI':'/api/menu-image?key=pudding-banana',
     'TRÀ DÂU ỔI BASIL':'/api/menu-image?key=straw-guava-basil',
     'TRÀ ĐÀO THANH YÊN':'/api/menu-image?key=yuzu-peach',
-    'CHOCOLATE NÓNG/LẠNH':'/assets/menu/tea-cacao/cacao.webp'
+    'CHOCOLATE NÓNG/LẠNH':'/api/menu-image-v3?key=cacao'
   };
   const imageFor=name=>officialImages[name]||(typeof productImages!=='undefined'?productImages[name]:null);
-  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260901-cacao-banana-v2':src;
+  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260901-cacao-banana-v3':src;
   const originalShowProduct=window.showProduct;
   if(typeof originalShowProduct==='function'){
     window.showProduct=(i)=>{
