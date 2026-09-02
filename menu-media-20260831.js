@@ -49,7 +49,7 @@
   };
 
   const imageFor=name=>officialImages[name]||(typeof productImages!=='undefined'?productImages[name]:null);
-  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260901-matcha-original-v5':src;
+  const versioned=src=>src?src+(src.includes('?')?'&':'?')+'v=20260902-matcha-repair-v6':src;
   const priceLabel=x=>x&&x[4]?x[4]:fmt(x[3]);
   const originalShowProduct=window.showProduct;
 
