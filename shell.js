@@ -1,4 +1,11 @@
 document.addEventListener('DOMContentLoaded',()=>{
+  const isHome=location.pathname==='/'||location.pathname==='/index.html';
+  if(isHome){
+    document.querySelectorAll('main > section.band').forEach(section=>{
+      const text=(section.textContent||'').toLowerCase();
+      if(text.includes('coffee downstairs')||text.includes('two familiar cups')) section.remove();
+    });
+  }
   if(!document.querySelector('link[rel="icon"]')){const i=document.createElement('link');i.rel='icon';i.type='image/svg+xml';i.href='/favicon.svg';document.head.appendChild(i)}
   if(!document.querySelector('link[href="/theme.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/theme.css';document.head.appendChild(c)}
   if(!document.querySelector('link[href="/hover-links-20260831.css"]')){const c=document.createElement('link');c.rel='stylesheet';c.href='/hover-links-20260831.css';document.head.appendChild(c)}
